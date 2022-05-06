@@ -9,12 +9,13 @@ function watch() {
     let hours = now.getHours();
     let minutes = now.getMinutes();
     let seconds = now.getSeconds();
+    let acronym = "";
     
     // Creamos y le damos valor a la variable acronym según la hora
     if( hours > 11 ){
-        var acronym = "PM";
+        acronym = "PM";
     } else {
-        var acronym = "AM";
+        acronym = "AM";
     }
 
     // Cambiamos el formato de las horas de 24 a 12
@@ -26,7 +27,6 @@ function watch() {
     hours = add0(hours);
     minutes = add0(minutes);
     seconds = add0(seconds);
-    
 
 
     // Variable con la hora 
