@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+    <script src="script/script.js"></script>
+    <style>
+        table {
+            width: 70%;
+            margin-bottom: 2em;
+        }
+        th, td {
+        text-align: center;
+        border: 1px solid;
+        }
+        form {
+            width: 70%;
+        }
+    </style>
+</head>
+<body onload="completeTable(teams,points)">
+    <section>
+        <table id="Clasification">
+            <thead>
+                <tr>
+                    <th>Posición</th>
+                    <th>Equipo</th>
+                    <th>Puntos</th>
+                </tr>
+            </thead>
+        </table>
+
+        <form>
+            <fieldset>
+                <label>Posicion</label>
+                <input type="text" id="Position"/>
+                <label>Equipo</label>
+                <input type="text" id="Team"/>
+                <label>Puntos</label>
+                <input type="text" id="Points"/>
+                <input type="button" value="Aplicar" onclick="changeTable(teams,points)"/>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
